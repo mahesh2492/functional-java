@@ -1,3 +1,4 @@
+package functional;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +7,7 @@ import java.util.List;
 public class Sample {
 
     //Imperiative style of coding
-    public static Boolean findCity(String name, List<String> cities) {
+    private static Boolean findCity(String name, List<String> cities) {
         boolean found = false;
         for (String city : cities) {
             if (city.equals(name)) {
