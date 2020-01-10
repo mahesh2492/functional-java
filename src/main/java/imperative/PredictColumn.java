@@ -1,6 +1,5 @@
 package imperative;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +21,7 @@ public class PredictColumn {
 
     static int findMaximumValue(HashMap<Integer, Integer> map) {
         int maxValueInMap=(Collections.max(map.values()));  // This will return max value in the Hashmap
+        System.out.println(map.entrySet());
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {  // Itrate through hashmap
             if (entry.getValue() == maxValueInMap) {
                 return entry.getKey();     // Print the key with max value
@@ -34,5 +34,6 @@ public class PredictColumn {
         int[][] a = { { 1, 1, 1, 0 }, { 1, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 1, 1, 0 } };
 
         System.out.println(PredictColumn.columnWithMaxZero(a, 4));
+
     }
 }
