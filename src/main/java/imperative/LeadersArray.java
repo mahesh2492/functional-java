@@ -121,7 +121,7 @@ public class LeadersArray {
                 a[i] = sc.nextInt() ;
             }
 
-            foo(a, n);
+            printLeaders(a, n);
             System.out.println();
         }
 
